@@ -1,0 +1,44 @@
+[Usage]
+1. In the same conversation, the user uploads the original character images and first generates an icon for each character using the separate “Grokbot Icon Prompt”.
+2. While those icons and original images are visible in the conversation, paste the instructions below as a new message.
+3. Enter your model name in the final [Phone model] field. If a model is already provided, do not ask for it again.
+
+[Goal]
+Starting from the Grokbot icons already generated in this conversation, create actual images in sequence: (1) a full-body chibi of each character with approximately 2.5-head proportions, then (2) lock-screen wallpapers for the specified phone. The Grokbot icons are already complete; do not generate them again. Do not assume any particular user's local filenames or storage paths.
+
+[Roles of the reference images]
+- The newly generated Grokbot icons: the direct reference for facial proportions, black capsule eyes, subtle blush, hair silhouette, and flat 2D coloring.
+- The originally uploaded images: the reference for each character's skin tone, hair color, distinctive accessories, actual outfit, and shoes. Do not reproduce the original pose, photographic background, or chroma-key background.
+- If there are multiple images, group references belonging to the same character and do not mix different characters' appearances or clothes. Ask for an image to be uploaded again only if the icon or original image is not visible in the current conversation. Ask which images correspond to which subjects only when multiple people are present and the intended subjects are unclear.
+
+[Step 1: Generate full-body chibis]
+- Create one character per icon with approximately 2.5-head proportions. The head height should be about 40% of the total height, and the entire body must fit within the frame, from the top of the hair and accessories to the soles of both shoes. Leave generous margins on every side.
+- Preserve the existing icon's round face and hair shape. Keep exactly two eyes: solid black vertical capsules of identical size. Add only faint oval blush to both cheeks; do not introduce a mouth, nose, pupils, eye whites, catchlights, eyelashes, or eyebrows.
+- Reflect the colors and main shapes needed to recognize the original outfit and shoes. Simplify excessive patterns while ensuring that different characters' outfits are not swapped.
+- Naturally connect one head, one torso, and two each of arms, hands, legs, and feet. Do not duplicate or fuse shoes, fingers, or limbs. Generate each character as a separate image.
+- The icon rules for an extreme close-up square face crop, excluding the torso and hands, or tilting and cropping the face beyond the frame do not apply at this stage. Inherit only the capsule eyes and the visual style of the face and hair.
+- Inspect the actual generated full-body chibis. If there are errors in the face, outfit, full-body framing, or limbs, correct those items before using the images in the next step.
+
+[Step 2: Create scenes and wallpapers]
+- Consider the generated full-body chibis together with the original outfits, colors, and accessories to choose a suitable setting, time of day, and mood. For multiple characters, consider their visual harmony. Do not state personalities or relationships that cannot be determined from the original images as facts.
+- The default output is a lock-screen wallpaper. Keep the exact number of characters and arrange them so their faces and full bodies remain recognizable. Leave calm space at the top for the clock and notifications, plus safe margins at the sides and bottom so characters, hair, and shoes are not cropped when applied to the device.
+- Check the manufacturer's official specifications for the model in [Phone model] and use each screen's native resolution and portrait aspect ratio. If a model name is already supplied, do not ask again. For foldables with different cover and inner screen resolutions, create a separate wallpaper for each screen. Adjust the composition for each screen instead of forcibly cropping and reusing a single picture. If the user specifies only one screen, create only that screen's wallpaper.
+- Generate images for the target screen's aspect ratio and inspect the actual pixel dimensions of the final files. If the generator's output differs from the target resolution, adjust the background and composition to fit without distorting the characters' proportions or cropping them. If exact dimensions cannot be exported, report the actual output dimensions and do not claim they match the target resolution.
+- Do not place clocks, notifications, UI, text, numbers, logos, watermarks, or unnecessary additional people inside the image. Keep the background less complex than the characters.
+
+[Default background art style]
+Draw the background in a soft illustration style based on the generated chibis' flat 2D coloring. Simplify buildings, trees, paths, and indoor objects into large shapes and smooth areas of color. Match outline thickness and color to the characters. If the characters have no outlines, distinguish background shapes through differences in color areas as well.
+Use broad, simple shading. Apply soft gradients to skies, sunsets, and lighting to establish depth and atmosphere. Simplify the colors and shapes of distant scenery, and leave enough space around the characters for their faces and outfits to remain easy to read.
+Match the direction of light, shadows, and color temperature between the characters and background so they belong naturally in a single picture. Keep background detail and contrast below those of the characters. Do not add rough textures, film grain, excessive gloss, dense patterns, or complicated shading.
+If the user specifies a different background art style, prioritize that request while preserving the characters' capsule eyes and distinctive facial style.
+
+[Image texture and clarity]
+Unless otherwise requested, do not overlay rough film grain, sand-like stippling, or speckled fine noise on smooth surfaces such as skin, walls, and sky. Keep linework crisp and shading and color transitions soft.
+Add only enough detail to convey form in areas that need actual texture, such as hair, fabric, or carpet. Do not apply uniform grain or excessive sharpening across the whole image.
+For localized edits, use the initial clean original whenever possible rather than repeatedly regenerating the entire picture. Inspect the results by zooming in on faces, hands, linework, smooth surfaces, and textured surfaces.
+
+[Delivering the results]
+Show the actual full-body chibis and wallpapers made for each screen. Explain the scene choice in one or two sentences and state the verified final width × height in pixels. If images were not generated or their resolution could not be verified, state that accurately. Show the results of each step to the user, then continue to the next step unless changes are requested.
+
+[Phone model]
+Enter your model here. Example: Galaxy S24 FE

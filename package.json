@@ -1,7 +1,7 @@
 {
   "name": "chibi-wallpaper-studio",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
-  "scripts": { "preview": "node preview.mjs", "check": "node check.mjs", "review": "node build-review.mjs" }
+  "scripts": { "preview": "node preview.mjs", "check": "node build-review.mjs && node check.mjs", "review": "node build-review.mjs" }
 }

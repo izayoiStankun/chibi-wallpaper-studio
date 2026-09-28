@@ -16,7 +16,16 @@
   <header class="header wrap">
     <a class="brand" href="#" aria-label="작은 화면 공방 홈"><span class="brand-mark" aria-hidden="true"><i></i><i></i></span><span>작은 화면 공방<small>CHIBI WALLPAPER STUDIO</small></span></a>
     <nav aria-label="주요 메뉴"><a href="#how">사용 순서</a><a href="#studio">프롬프트</a><a href="#credits">출처</a></nav>
-    <span class="draft"><span></span>공개 전 미리보기</span>
+    <div class="header-tools">
+      <select id="language" aria-label="언어 선택 — 안내와 프롬프트가 함께 바뀝니다">
+        <option value="ko" lang="ko">한국어</option>
+        <option value="en" lang="en">English</option>
+        <option value="ja" lang="ja">日本語</option>
+        <option value="zh-Hans" lang="zh-Hans">简体中文</option>
+        <option value="zh-Hant" lang="zh-Hant">繁體中文</option>
+      </select>
+      <span class="draft"><span></span>공개 전 미리보기</span>
+    </div>
   </header>
   <main id="main">
     <section class="hero wrap" aria-labelledby="hero-title">
@@ -86,7 +95,7 @@
         <p class="local-note">입력한 기종은 이 페이지에서만 사용해요.<br>이미지는 원래 사용하던 ChatGPT 대화에 올려주세요.</p>
       </div>
       <div class="studio-preview">
-        <div class="preview-header"><span class="eyebrow">YOUR PROMPT</span><span class="version">검토본 0.1</span></div>
+        <div class="preview-header"><span class="eyebrow">YOUR PROMPT</span><span class="version">검토본 0.2</span></div>
         <h3>이런 흐름을 담았어요.</h3>
         <div class="prompt-route"><span>완성된 아이콘</span><span aria-hidden="true">→</span><strong>전신 치비</strong><span aria-hidden="true">→</span><strong>월페이퍼</strong></div>
         <div class="preview-rules"><p><span>01</span>둥근 얼굴과 캡슐 눈은 그대로</p><p><span>02</span>원본 의상과 신발까지 담은 전신</p><p><span>03</span>캐릭터에 어울리는 부드러운 2D 배경</p><p><span>04</span>시계와 알림을 위한 조용한 여백</p></div>
@@ -102,7 +111,7 @@
       <details><summary>이 페이지에서 이미지가 생성되나요?<span aria-hidden="true">+</span></summary><p>이 페이지는 기종을 넣은 프롬프트를 준비해줘요. 실제 이미지는 아이콘을 만든 ChatGPT 대화에 프롬프트를 붙여넣어 생성합니다.</p></details>
       <details><summary>해상도는 어떻게 정하나요?<span aria-hidden="true">+</span></summary><p>프롬프트에는 모델의 제조사 공식 사양을 확인하고 최종 파일 크기를 검사하도록 적혀 있어요. 여기서 기종별 해상도를 미리 단정하지 않으며, 생성 결과의 실제 크기는 사용하는 도구에서 확인해야 합니다.</p></details>
     </div></section>
-    <section class="credits wrap" id="credits" aria-labelledby="credits-title"><div class="credit-symbol" aria-hidden="true">✳</div><div><p class="eyebrow">WITH THANKS</p><h2 id="credits-title">시작을 만들어준 아이디어에 감사하며.</h2><p>Grokbot Icon 프롬프트를 만든 <a href="https://x.com/multi_serio_ai" target="_blank" rel="noopener noreferrer">@multi_serio_ai (APG) ↗</a>의 작업에서 출발했습니다. 이 공방은 생성된 아이콘을 전신 치비와 휴대폰 월페이퍼로 이어가는 후속 프롬프트를 소개합니다.</p><div class="credit-links"><a href="https://grokbot-icon-studio.serio-ai.chatgpt.site/" target="_blank" rel="noopener noreferrer">원작 페이지 ↗</a><a href="https://grokbot-icon-studio.serio-ai.chatgpt.site/license" target="_blank" rel="noopener noreferrer">원작 라이선스 안내 ↗</a><a href="https://creativecommons.org/licenses/by-nc/4.0/deed.ko" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0 ↗</a></div><p class="credit-fine">변경·확장 사항: 2.5등신 전신 제작, 기종별 월페이퍼 구성, 배경 화풍 및 선명도 규칙.<br>원작자가 제작하거나 승인한 공식 페이지가 아닙니다. 현재는 원작자 확인을 위한 비공개 검토본입니다.</p></div></section>
+    <section class="credits wrap" id="credits" aria-labelledby="credits-title"><div class="credit-symbol" aria-hidden="true">✳</div><div><p class="eyebrow">WITH THANKS</p><h2 id="credits-title">시작을 만들어준 아이디어에 감사하며.</h2><p>Grokbot Icon 프롬프트를 만든 <a href="https://x.com/multi_serio_ai" target="_blank" rel="noopener noreferrer">@multi_serio_ai (APG) ↗</a>의 작업에서 출발했습니다. 이 공방은 생성된 아이콘을 전신 치비와 휴대폰 월페이퍼로 이어가는 후속 프롬프트를 소개합니다.</p><div class="credit-links"><a href="https://grokbot-icon-studio.serio-ai.chatgpt.site/" target="_blank" rel="noopener noreferrer">원작 페이지 ↗</a><a href="https://grokbot-icon-studio.serio-ai.chatgpt.site/license" target="_blank" rel="noopener noreferrer">원작 라이선스 안내 ↗</a><a href="https://creativecommons.org/licenses/by-nc/4.0/deed.ko" target="_blank" rel="noopener noreferrer">CC BY-NC 4.0 ↗</a></div><p class="credit-fine">변경·확장 사항: 2.5등신 전신 제작, 기종별 월페이퍼 구성, 배경 화풍 및 선명도 규칙, 4개 언어 번역.<br>원작자의 공개 허락을 받아 준비한 독립 프로젝트입니다. 현재는 공개 전 최종 검토본입니다.</p><p class="site-creator">공방 제작 · <a href="https://x.com/Stang_kun" target="_blank" rel="noopener noreferrer">@Stang_kun ↗</a></p></div></section>
   </main>
   <footer class="footer wrap"><span>작은 화면 공방</span><span>당신의 캐릭터가 머물 작은 풍경.</span><a href="#">맨 위로 ↑</a></footer>
 </body>

@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 const root = path.dirname(fileURLToPath(import.meta.url));
 const mime = {'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.txt':'text/plain; charset=utf-8'};
-const publicFiles = new Set(['index.html','styles.css','app.js','prompt.js','master-prompt.txt','review.html']);
+const publicFiles = new Set(['index.html','styles.css','app.js','prompt.js','locales.js','master-prompt.txt','prompt-en.txt','prompt-ja.txt','prompt-zh-Hans.txt','prompt-zh-Hant.txt','review.html']);
 const port = Number(process.env.PORT || 4173);
 http.createServer(async (req, res) => {
   try {
