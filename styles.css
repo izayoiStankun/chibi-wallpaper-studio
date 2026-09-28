@@ -20,4 +20,3 @@
 .art-scene .art-orbit{max-width:100%}
 @media(max-width:1000px){.art-scene{height:484px}.art-scene .phone{width:204px;height:426px;border-radius:34px}.art-scene .phone-screen{border-radius:26px}.art-scene .chibi{width:97px;left:calc(50% - 48px);bottom:18px}.hero-art .float-label{font-size:11px;padding:11px 12px}.hero-art .label-top,.hero-art .label-bottom{margin-inline:0}}
 @media(max-width:760px){.hero-art{margin-top:40px;gap:12px}.hero-art .label-top,.hero-art .label-bottom{justify-self:center}}
-
